@@ -14,11 +14,21 @@ public class Main extends Object {
 //            Person alexa=new Person("Alexa ");
 //        System.out.println(alexa.toString());
 //        System.out.println(a);
-    Person Smith=new Person(40, "Smith");
-    Smith.incrementAge();
-    Smith.incrementGetAge(5);
-    int age=Smith.incrementGetAge(5);
-        System.out.println(age);
+//        Person Smith = new Person(40, "Smith", true);
+//        Smith.incrementAge();
+//        Smith.incrementGetAge(5);
+//        int age = Smith.incrementGetAge(5);
+//        System.out.println(Smith);
+//        Smith.divorced();
+//        System.out.println(Smith);
+//        Smith.married();
+//        System.out.println(Smith);
+        Photographer Alex = new Photographer (50, "Alex", false );
+        Alex.doPhoto();
+        Alex.doPhoto();
+        Alex.doPhoto();
+        String photo = Alex.getPhoto();
+        System.out.println(photo);
     }
 
 }
