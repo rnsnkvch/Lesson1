@@ -23,12 +23,13 @@ public class Main extends Object {
 //        System.out.println(Smith);
 //        Smith.married();
 //        System.out.println(Smith);
-        Photographer Alex = new Photographer (50, "Alex", false );
-        Alex.doPhoto();
-        Alex.doPhoto();
-        Alex.doPhoto();
-        String photo = Alex.getPhoto();
-        System.out.println(photo);
+//        Photographer Alex = new Photographer (50, "Alex", false );
+//        Alex.doPhoto();
+//        Alex.doPhoto();
+//        Alex.doPhoto();
+//        String photo = Alex.getPhoto();
+//        System.out.println(photo);
+        VideoMaker Mark=new Person(30, "Mark", true);
     }
 
 }
