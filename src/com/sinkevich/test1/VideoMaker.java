@@ -2,6 +2,19 @@ package com.sinkevich.test1;
 
 public class VideoMaker extends Person implements Video {
     private String video;
+    private int vNumber=0;
+
+    public VideoMaker(String userName) {
+        super(userName);
+    }
+
+    public VideoMaker(int age, String userName, boolean m) {
+        super(age, userName, m);
+    }
+
+    public VideoMaker(int age) {
+        super(age);
+    }
 
     @Override
     public String getVideo() {
@@ -10,8 +23,8 @@ public class VideoMaker extends Person implements Video {
 
     @Override
     public void doVideo() {
-        video=mp4;
-        int number=0;
+        video="video"+vNumber;
+        vNumber=vNumber+1;
 
     }
 }

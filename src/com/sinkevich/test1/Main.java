@@ -29,7 +29,11 @@ public class Main extends Object {
 //        Alex.doPhoto();
 //        String photo = Alex.getPhoto();
 //        System.out.println(photo);
-        VideoMaker Mark=new Person(30, "Mark", true);
+        VideoMaker Mark=new VideoMaker(30, "Mark", true);
+        Mark.doVideo();
+        Mark.doVideo();
+        String video=Mark.getVideo();
+        System.out.println(video);
     }
 
 }

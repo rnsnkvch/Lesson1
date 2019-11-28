@@ -4,7 +4,7 @@ public class Person {
     private String userName;
     private int age;
     private boolean marriage;
-////    public Person (){
+//  public Person (){
 //        userName="";
 //        age=0;
 //        marriage=false;
