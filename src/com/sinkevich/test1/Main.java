@@ -1,5 +1,7 @@
 package com.sinkevich.test1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main extends Object {
@@ -23,17 +25,27 @@ public class Main extends Object {
 //        System.out.println(Smith);
 //        Smith.married();
 //        System.out.println(Smith);
-//        Photographer Alex = new Photographer (50, "Alex", false );
-//        Alex.doPhoto();
-//        Alex.doPhoto();
-//        Alex.doPhoto();
-//        String photo = Alex.getPhoto();
-//        System.out.println(photo);
-        VideoMaker Mark=new VideoMaker(30, "Mark", true);
+        Photographer Alex = new Photographer(50, "Alex", false);
+        Alex.doPhoto();
+        Alex.doPhoto();
+        Alex.doPhoto();
+        String photo = Alex.getPhoto();
+        System.out.println(photo);
+        VideoMaker Mark = new VideoMaker(30, "Mark", true);
         Mark.doVideo();
         Mark.doVideo();
-        String video=Mark.getVideo();
+        String video = Mark.getVideo();
         System.out.println(video);
+        Photo photo1 = new MultiMakerImpl();
+        Photo photo2 = new Photographer("Test");
+        List photoList = new ArrayList();
+        photoList.add(photo1);
+        photoList.add(photo2);
+        for (int i=0; i<=photoList.size()-1;i++){
+            System.out.println(photoList.get(i));
+        }
+
+
     }
 
 }
