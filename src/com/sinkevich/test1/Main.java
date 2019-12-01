@@ -41,11 +41,12 @@ public class Main extends Object {
         List photoList = new ArrayList();
         photoList.add(photo1);
         photoList.add(photo2);
-        for (int i=0; i<=photoList.size()-1;i++){
+        for (int i = 0; i <= photoList.size() - 1; i++) {
             System.out.println(photoList.get(i));
+            
         }
-
 
     }
 
 }
+
