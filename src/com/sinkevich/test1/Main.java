@@ -38,15 +38,33 @@ public class Main extends Object {
         System.out.println(video);
         Photo photo1 = new MultiMakerImpl();
         Photo photo2 = new Photographer("Test");
-        List photoList = new ArrayList();
+        List <Photo> photoList = new ArrayList <Photo>();
         photoList.add(photo1);
         photoList.add(photo2);
         for (int i = 0; i <= photoList.size() - 1; i++) {
             System.out.println(photoList.get(i));
-            
+            Photo currentPhoto = photoList.get(i);
+            currentPhoto.doPhoto();
+            System.out.println(currentPhoto.getPhoto());
+            var current = photoList.get(i);
         }
+        for(Photo currentPhoto : photoList) {
+            currentPhoto.doPhoto();
+            System.out.println(currentPhoto.getPhoto());
+        }
+        photoList.forEach(new MyConsumer());
+//            int[] array = new int []{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//            for (int a = 0; a < 10; a++){
+//                System.out.println(array[a]);
+//            }
 
     }
 
 }
 
+//for() - написать цикл который
+//выводит все числа
+//собрать  сумму этих чисел
+//вывести чиселку-сумму
+//вывести каждое 2-ое число
+//вевести четные числа (проверить на четность: x % 2 == 0)
