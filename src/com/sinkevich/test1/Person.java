@@ -46,13 +46,7 @@ public class Person {
     public boolean isMarriage() {
         return marriage;
     }
+    public int getAge (){
+        return age;
+    }
 }
-//2 метода, который меняет это поле и  ничего не возвращает
-//  1)married
-//  2)divorced
-//
-//метод isMarried - который возвращает значение
-//
-//расширим конструкторы: по дефолту marrige = false;
-//сделаем еще один конструктор, который принимает marrige тоже
-//public Person(String userName, int age, boolean marrige)

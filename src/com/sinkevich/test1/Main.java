@@ -27,7 +27,7 @@ public class Main extends Object {
 //        System.out.println(Smith);
         Photographer Alex = new Photographer(50, "Alex", true);
 //        Alex.
-        if (Alex.isMarriage() && Alex.getUserName().equals("Alex")){
+        if (Alex.isMarriage() && Alex.getAge()>0){
         Alex.doPhoto();
         Alex.doPhoto();
         Alex.doPhoto();}
