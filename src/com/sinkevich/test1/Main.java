@@ -1,8 +1,6 @@
 package com.sinkevich.test1;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main extends Object {
     public static void main(String[] args) {
@@ -41,6 +39,9 @@ public class Main extends Object {
         Photo photo1 = new MultiMakerImpl();
         Photo photo2 = new Photographer("Test");
         List<Photo> photoList = new ArrayList<Photo>();
+        Map<Integer, Photo> map = new HashMap<>();
+        map.put(1, photo2);
+        System.out.println(map.get(1) + " from map");
         photoList.add(photo1);
         photoList.add(photo2);
         for (int i = 0; i <= photoList.size() - 1; i++) {
